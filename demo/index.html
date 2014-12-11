@@ -1,0 +1,245 @@
+﻿
+<!DOCTYPE html >
+<html  xmlns:xlink="http://www.w3.org/1999/xlink">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Icoonies demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- jQuery -->
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<!--icoonies -->
+<script src="../icoonies.1.0/js/base64.js"></script>
+<script src="../icoonies.1.0/js/icoonies.1.0.min.js"></script>
+<link href="../icoonies.1.0/css/icoo.css" rel="stylesheet" class="icoonies-css" />
+
+<!-- demo -->
+<link href="css/base.css" rel="stylesheet" class="icoonies-css" />
+<link href="css/example.css" rel="stylesheet" class="icoonies-css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400,300,700' rel='stylesheet' type='text/css'>
+
+
+<script>
+    $(document).ready(function () {
+        icoo.init();
+    });
+</script>
+      
+</head>
+<body>
+    <div class="container">
+        <h1 class="title-demo">Icoonies</h1>
+        <div class="block-txt text">
+        	<p>This is a demo. For more information and examples on icoonies see the project on github: </p>
+            <p class="note"><strong>Important:</strong> If you don't see the svg images, and this demo running from your local computer without the server, open this page with the browser Mozilla Firefox.
+            If you don't see the svg images, and this demo running from the server, check that the configuration of required file extension .svg is enabled.</p>
+        </div>
+        <div class="block-txt text">
+            <h2 class="subtitle-demo">Example</h2>
+            <p>The following examples are some solutions that can offer icoonies. Your imagination can do much more.</p>
+            <ul class="list-type">
+                <li><a href="#modeBg">Mode background svg</a></li>
+                <li><a href="#modeImg">Mode image svg</a></li>
+                <li><a href="#modeSvg">Mode svg</a></li>
+            </ul>
+        </div>
+        <div class="block-txt text">
+            <h3 id="modeBg" class="title-small-demo">Mode background svg</h3>
+            <p>In these examples the svg is managed by icoonies as background element.</p>
+        </div>
+        <div class="block-txt text">
+            <h4 class="sub-subtitle-demo">Show areas of the image</h4>
+            <p>Icoonies identifies areas of svg. For each area is assigned an id with prefix "icoo-area-(n)".</p>
+            <p>Click on the images of the example to see the areas that made up.</p>
+            <div class="box-show-area-bg">
+                <span class="icooth-show"></span>
+                <span class="coffee-show"></span>
+            </div>
+        </div>
+        <div class="block-txt text">
+            <h4 class="sub-subtitle-demo">Customize areas of the image</h4>
+            <div class="box-custom-area-bg">
+                <span class="icooth-custom-one"></span>
+                <span class="icooth-custom-two"></span>
+                <span class="icooth-custom-tree"></span>
+                <span class="icooth-custom-four"></span>
+                <span class="icooth-custom-five"></span>
+            </div>
+        </div>            
+        <div class="block-txt text">
+            <h4 class="sub-subtitle-demo">Background position cross browser</h4>
+            <ul class="list-bg">
+                <li class="bg-responsive-left">Responsive left</li>
+                <li class="bg-responsive-center">Responsive center</li>
+                <li class="bg-responsive-right">Responsive right</li>
+                <li class="bg-responsive-custom" >Responsive custom</li>
+            </ul>
+            <ul class="list-bg">
+                <li class="bg-fixed-left-top">Fixed left top</li>
+                <li class="bg-fixed-left-center">Fixed left center</li>
+                <li class="bg-fixed-left-bottom">Fixed left bottom</li>
+                <li class="bg-fixed-left-custom">Fixed left custom</li>
+            </ul>
+            <ul class="list-bg">
+                <li class="bg-fixed-center-top">Fixed center top</li>
+                <li class="bg-fixed-center-center">Fixed center center</li>
+                <li class="bg-fixed-center-bottom">Fixed center bottom</li>
+                <li class="bg-fixed-center-custom">Fixed center custom</li>
+            </ul>
+            <ul class="list-bg">
+                <li class="bg-fixed-right-top">Fixed right top</li>
+                <li class="bg-fixed-right-center">Fixed right center</li>
+                <li class="bg-fixed-right-bottom">Fixed right bottom</li>
+                <li class="bg-fixed-right-custom">Fixed right custom</li>
+            </ul>
+        </div>
+        <div class="block-txt text">
+            <h4 class="sub-subtitle-demo">Link</h4>
+            <a class="link-bg" href="#">click coffeee</a>
+        </div> 
+        <div class="block-txt text">           
+            <h4 class="sub-subtitle-demo">List + :nth-child()</h4>
+            <ul class="list-coffee clearing">
+                <li>Hot coffee?</li>
+                <li>Cold coffee?</li>
+                <li>without saucer?</li>
+                <li>Ops, spilled!</li>
+            </ul>
+        </div>
+        <div class="block-txt text clearing">
+            <h4 class="sub-subtitle-demo">Animations</h4>
+            <span class="icooth-animate"></span>
+            <span class="icooth-stroke-animate"></span>
+            <span class="pupu-animate"></span>
+            <input class="delete-btn" type="button" value="delete" />
+        </div>
+        <div class="block-txt text">
+            <h4 class="sub-subtitle-demo">Pseudo-elements (no showarea)</h4>
+            <ul class="list-pseudo-elements clearing">
+                <li class="cont-generate"><span></span></li>
+                <li class="first-elements">
+                    <ul>
+                        <li>First child</li>
+                        <li>Second child</li>
+                    </ul>
+                </li>
+            </ul>
+        </div> 
+        <div class="block-txt text">
+            	<h4 class="sub-subtitle-demo">Media query </h4>
+                <p>To see the result, resize the browser window.</p>
+                <span class="bg-media-query"></span>
+            </div>               
+
+        <div class="block-txt text">
+            <div class="block-txt text">
+                <h3 id="modeImg" class="title-small-demo">Mode image svg</h3>
+                <p>In these examples the svg is managed by icoonies as image element.</p>
+            </div>
+            <div class="block-txt text">
+                <h4 class="sub-subtitle-demo">Show areas of the image</h4>
+                <p>Icoonies identifies areas of svg. For each area is assigned an id with prefix "icoo-area-(n)".</p>
+                <p>Click on the images of the example to see the areas that made up.</p>
+                <div class="box-show-area-image">
+                    <img alt="icooth" id="icooth-area" src="#" class="icoonies icoo-showarea" data-src="svg/icooth.svg" />
+                    <img alt="coffee" id="coffee-area" src="#" class="icoonies icoo-showarea" data-src="svg/coffee.svg" />
+                </div>
+            </div>
+            <div class="block-txt text">
+                <h4 class="sub-subtitle-demo">Customize areas of the image</h4>
+                <div class="box-custom-area-img clearing">
+                    <img alt="icooth original" src="#" class="icoonies" data-src="svg/icooth.svg" />
+                    <img alt="icooth blond" src="#" class="icoonies icooth-blond" data-src="svg/icooth.svg" />
+                    <img alt="icooth green " src="#" class="icoonies icooth-green" data-src="svg/icooth.svg" />
+                    <img alt="icooth picture " src="#" class="icoonies icooth-picture" data-src="svg/icooth.svg" />
+                    <img alt="icooth logo " src="#" class="icoonies icooth-logo" data-src="svg/icooth.svg" />
+                </div>
+            </div> 
+            <div class="block-txt text">
+                <h4 class="sub-subtitle-demo">Responsive image</h4>
+                <div class="clearing">
+                    <img alt="coffee" src="#" class="icoonies img-responsive" data-src="svg/coffee.svg" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="block-txt text">
+                <h4 class="sub-subtitle-demo">Fixed image</h4>
+                <div class="clearing">
+                    <img alt="coffee" src="#" class="icoonies img-fixed" data-src="svg/coffee.svg" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="block-txt text clearing">
+                <h4 class="sub-subtitle-demo">Animations</h4>
+                <img alt="icooth" src="#" class="icoonies icooth-img-animate" data-src="svg/icooth.svg" />
+                <img alt="icooth" src="#" class="icoonies icooth-img-stroke-animate" data-src="svg/icooth.svg" />
+                <img alt="icooth" src="#" class="icoonies pupu-img-animate" data-src="svg/pupu.svg" />
+            </div>
+            <div class="block-txt text">
+                <h4 class="sub-subtitle-demo">Media query</h4>
+                <p>To see the result, resize the browser window.</p>
+                <img alt="icooth" src="#" class="icoonies icooth-mediaq" data-src="svg/icooth.svg" />
+            </div>                          
+        </div>
+        <div class="block-txt text">
+            <div class="block-txt text">
+                <h3 id="modeSvg" class="title-small-demo">Mode svg</h3>
+                <p>In these examples the svg is managed by icoonies as svg element.</p>
+            </div>
+            <div class="block-txt text">
+                <h4 class="sub-subtitle-demo">Show areas of the image</h4>
+                <p>Icoonies identifies areas of svg. For each area is assigned an id with prefix "icoo-area-(n)".</p>
+                <p>Click on the images of the example to see the areas that made up.</p>
+                <div class="box-show-area-svg clearing">
+                    <span><img alt="icooth" src="#" class="icoonies icoo-showarea cippa" data-mode="svg" data-src="svg/icooth.svg" /></span>
+                    <span><img alt="coffee" src="#" class="icoonies icoo-showarea cippa" data-mode="svg" data-src="svg/coffee.svg" /></span>
+                </div>
+            </div>
+            <div class="block-txt text">
+                <h4 class="sub-subtitle-demo">Customize  areas of the image</h4>
+                <div class="box-custom-area-svg clearing">
+                    <span><img alt="icooth original" src="#" class="icoonies" data-mode="svg" data-src="svg/icooth.svg" /></span>
+                    <span><img alt="icooth blond" src="#" class="icoonies icooth-blond-svg" data-mode="svg" data-src="svg/icooth.svg" /></span>
+                    <span><img alt="icooth green " src="#" class="icoonies icooth-green-svg" data-mode="svg" data-src="svg/icooth.svg" /></span>
+                    <span><img alt="icooth picture " src="#" class="icoonies icooth-picture-svg" data-mode="svg" data-src="svg/icooth.svg" /></span>
+                    <span><img alt="icooth logo " src="#" class="icoonies icooth-logo-svg" data-mode="svg" data-src="svg/icooth.svg" /></span>
+                </div>
+            </div>
+            <div class="block-txt text">
+                 <h4 class="sub-subtitle-demo">Responsive svg</h4>
+                <div class="clearing">
+                    <span class="box-svg-responsive"><img alt="coffee" src="#" class="icoonies" data-mode="svg" data-src="svg/coffee.svg" /></span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="block-txt text">
+                <h4 class="sub-subtitle-demo">Fixed svg</h4>
+                <div class="clearing relativ">
+                    <span class="box-svg-fixed"><img alt="coffee" src="#" class="icoonies ico-coffee-violet" data-mode="svg" data-src="svg/coffee.svg" /></span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="block-txt text clearing">
+                <h4 class="sub-subtitle-demo">Animations</h4>
+                <span class="box-svg-animate"><img alt="icooth" src="#" class="icoonies icooth-svg-animate" data-mode="svg" data-src="svg/icooth.svg" /></span>
+                <span class="box-svg-animate"><img alt="icooth" src="#" class="icoonies icooth-svg-stroke-animate" data-mode="svg" data-src="svg/icooth.svg" /></span>
+                <span class="box-svg-animate"><img alt="icooth" src="#" class="icoonies pupu-svg-animate" data-mode="svg" data-src="svg/pupu.svg" /></span>
+            </div>
+            <div class="block-txt text">
+                <h4 class="sub-subtitle-demo">Media query</h4>
+                <p>To see the result, resize the browser window.</p>
+                <span class="box-svg-mediaq"><img alt="icooth" src="#" class="icoonies icooth-mediaq-svg" data-mode="svg" data-src="svg/icooth.svg" /></span>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,140 @@
+*																{	margin:0; padding:0;
+}
+*:focus															{	outline:none;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video 										{	border:0; outline:0; font-size:100%; background:transparent; font-weight:normal; font-style:normal; 
+}
+body 															{	line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section 							{ 	display:block; 
+}
+nav ul 															{	list-style:none;
+}
+blockquote, q 													{	quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after 												{	content:''; content:none;
+}
+a 																{	font-size:100%; vertical-align:baseline; background:transparent;
+}
+ins 															{	background-color:#ff9; color:#000; text-decoration:none;
+}
+mark 															{	background-color:#ff9; color:#000;  font-style:italic; font-weight:bold;
+}
+del 															{	text-decoration: line-through;
+}
+abbr[title], dfn[title] 										{	border-bottom:1px dotted; cursor:help;
+}
+table 															{	border-collapse:collapse; border-spacing:0;
+}
+hr 																{	display:block; height:1px; border:0;    border-top:1px solid #cccccc; margin:1em 0; padding:0;
+}
+input, select 													{	vertical-align:middle;
+}
+/*base elements ----------------------------------------------------------------------------------------------------------------------------------*/
+html, body												        {	font:100%  Roboto, Tahoma, Verdana, sans-serif; /*16px*/ text-align:center; 
+}
+body													        {   background:#fff;	
+}
+div, p, a, table, ul, ol								        {	font-size:0.75em; color:#000;
+}
+a														        {	color:#9b007e;  font-weight:bold; text-decoration:none; 
+}
+a:hover													        {	text-decoration:underline;
+}
+div p, div a, div ul, div 
+ol, div h2, div h3, div h4, 
+div h5, div h6, div div, 
+div fieldset, div table,
+p a, table p, table a, 
+table ul, table ol, table h2, 
+table h3, table h4, table h5, 
+table h6,ul li p, ul li a, 
+ul li ul, ul li ol, ul li h2, 
+ul li h3, ul li h4, ul li h5, 
+ul li h6,ol li p, ol li a, 
+ol li ul, ol li ul, ol li h2, 
+ol li h3, ol li h4, ol li h5, 
+ol li h6												        {	font-size:100%; 
+}	
+strong													        {	font-weight:bold;
+}
+img														        {	/*max-width:100%;*/ height:auto;
+}
+/*class ------------------------------------------------------------------------------------------------------------------------------------------- */
+.clearing												        {	height:auto !important; min-height:10px; height:10px;
+}
+.clearing:after											        {	content:"."; clear:both; display:block; visibility:hidden; height:0;
+}	
+.relativ												        {	position:relative !important;
+}
+/*common elements ---------------------------------------------------------------------------------------------------------------------------------- */
+.container														{	text-align:left; max-width:900px; margin:auto; margin-top:20px;
+}
+.title-demo														{	/*icoonies*/ background:url(../svg/icoonies.svg) no-repeat center top; text-indent:-99999px; min-height:60px; margin-bottom:20px;
+}
+.title-demo #icoo-area-4,
+.title-demo #icoo-area-3										{	/*icoonies*/ fill:#9b007e;
+}
+.title-demo #icoo-area-2										{	/*icoonies*/ fill:none; stroke:#9b007e;
+}
+.subtitle-demo													{	font-size:1.8em; font-weight:bold; padding-bottom:10px; text-align:center;
+}
+.title-small-demo                                               {   font-size:1.6em; font-weight:bold; padding-bottom:10px; text-align:center;
+}
+.sub-subtitle-demo												{	font-size:1.4em; font-weight:bold; padding-bottom:10px;
+}
+.block-txt														{	margin:20px 0;
+}
+.note                                                           {   padding-top:10px;
+}
+.note strong                                                    {   font-size:110%; margin-right:5px;
+}
+.text p                                                         {   padding-bottom:5px;
+}
+.text p,
+.text ul														{	font-size:120%;
+}
+.list-type                                                      {   margin-top:10px; 
+}
+.list-type li                                                   {   margin:0 0 5px 30px;
+}
+
+
+
+@media screen and (min-width:0) and (max-width:1000px) {
+    .container                              {   padding:20px 30px; margin-top:0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

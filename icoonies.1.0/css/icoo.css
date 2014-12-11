@@ -1,0 +1,37 @@
+﻿img[src*="data:image/svg+xml;base64"], svg              {  /*icoonies*/ width: 100%; height:100%; display:block; 
+}
+.obj                                                    { /*icoonies*/  width: 100%; height:100%; display:table;  position:relative; padding-top:100%; 
+}
+.obj svg                                                {  /*icoonies*/ width: 100%; height: 100%; display:table-cell; position:absolute; top:0; left:0; 
+}
+.icoonies-bg                                            { /*icoonies*/  width: 100%; height: 100%;  position:absolute; top:0; left:0; z-index:-1; 
+}
+.icoonies-relative                                      {  /*icoonies*/ position:relative; z-index:2;
+}
+.icoonies-bg.zindex-area                                {  /*icoonies*/ z-index:1000;
+}
+.icoo-modal-opacity                 					{   position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(2, 2, 2, 0.7); z-index:9000000;
+}
+.icoo-modal                         					{   width: 80%; height: 80%; padding:1%; border-radius:10px;  margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background:#fff; border-radius:10px; z-index:900000; -webkit-box-shadow: 1px 1px 9px 0px #000; -moz-box-shadow:1px 1px 9px 0px #000; box-shadow:1px 1px 9px 0px #000;
+}
+.icoo-overflow-modal                					{   overflow: auto; position:relative; height:100%; 
+}
+.icoo-overflow-modal p                					{ 	font-size:120%;  
+}
+.icoo-close-modal,
+.icoo-close-modal:hover                  				{   /*icoonies;*/ position:absolute; top:-10px; right:-5px; z-index:900000; width:35px; min-height:35px; font-size:0; background:url(../svg/icoo-close.svg) no-repeat center top; 
+}
+.icoo-close-modal #icoo-area-2                  		{   /*icoonies;*/ fill:#9b007e;
+}
+.icoo-close-modal:hover #icoo-area-2					{	/*icoonies*/ opacity:.5;
+}
+.icoo-aree-modal                     					{   width:40%; margin:auto; margin-top:20px;
+}
+.icoo-showarea                    						{   cursor:help;
+}
+.IE                                                     {   background-size:100% !important;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src*="data:image/svg+xml;base64"],svg             {   width: 100%; height:100%;    display:block;
+  }
+}
