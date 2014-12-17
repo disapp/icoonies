@@ -61,10 +61,10 @@ In this way you can get from a single object svg an infinity solutions by writin
 	<span class=”myClassYellow”>lorem ipsum.. </span>
 	
 	//css
-	.myClassGreen, .myClassBlue, myClassYellow 	{ /*icoonies*/  background:url(myObjectSvg.svg) ..}
-	.myClassGreen  #icoo-area-1 			    { /*icoonies*/  fill:green; opacity:.6;  }
-	.myClassBlue   #icoo-area-1 				{ /*icoonies*/  fill:blue; stroke:#000;}
-	.myClassYellow #icoo-area-1 				{ /*icoonies*/  fill:Yellow; stroke:none; }
+	.myClassGreen, .myClassBlue, .myClassYellow 	{ /*icoonies*/  background:url(myObjectSvg.svg) ..}
+	.myClassGreen  #icoo-area-1 			    { /*icoonies*/  fill:green; opacity:.6; ...  }
+	.myClassBlue   #icoo-area-1 				{ /*icoonies*/  fill:blue; stroke:#000; ...}
+	.myClassYellow #icoo-area-1 				{ /*icoonies*/  fill:Yellow; stroke:none; ... }
 	
 	// no edit my object svg
 
