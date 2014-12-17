@@ -52,6 +52,21 @@ customize my object svg with svg tag - icoonies approach
 	.myClass #icoo-area-1 	{ /*icoonies*/  fill:green; stroke:blue; stroke-width:5;}
 	
 	// no edit my object svg
+	
+In this way you can get from a single object svg an infinity solutions by writing little markup. Example:
+
+	//html
+	<span class=”myClassGreen”>lorem ipsum.. </span>
+	<span class=”myClassBlue”>lorem ipsum.. </span>
+	<span class=”myClassYellow”>lorem ipsum.. </span>
+	
+	//css
+	.myClassGreen, .myClassBlue, myClassYellow 	{ /*icoonies*/  background:url(myObjectSvg.svg) ..}
+	.myClassGreen  #icoo-area-1 			    { /*icoonies*/  fill:green; opacity:.6;  }
+	.myClassBlue   #icoo-area-1 				{ /*icoonies*/  fill:blue; stroke:#000;}
+	.myClassYellow #icoo-area-1 				{ /*icoonies*/  fill:Yellow; stroke:none; }
+	
+	// no edit my object svg
 
 ## Quick start
 
