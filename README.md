@@ -16,13 +16,13 @@ Icoonies is a modern tool to manage and customize easily and fast vector images 
 ## Benefits
 The benefits of using icoonies can be shown in the examples that follow.
 
-*my object svg*
+my object svg
 
 	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 334 278" style="enable-background:new 0 0 334 278;" xml:space="preserve">
 		<rect x="0.5" y="0.5" style="fill:red;  stroke:black ; stroke-width:10;" width="333" height="277"/>
 	</svg>
 	
-*customize my object svg with background image - icoonies approach*
+customize my object svg with background image - icoonies approach
 
 	//html
 	<span class=”myClass”>lorem ipsum.. </span>
@@ -33,7 +33,7 @@ The benefits of using icoonies can be shown in the examples that follow.
 	
 	// no edit my object svg
 	
-*customize my object svg with image tag - icoonies approach*
+customize my object svg with image tag - icoonies approach
 
 	//html
 	<img alt=”my svg” class="icoonies myClass" src=”#” data-src="myObjectSvg.svg" />
@@ -43,7 +43,7 @@ The benefits of using icoonies can be shown in the examples that follow.
 	
 	// no edit my object svg	
 
-*customize my object svg with svg tag - icoonies approach*
+customize my object svg with svg tag - icoonies approach
 
 	//html
 	<img alt=”my svg” data-mode="svg" class="icoonies myClass" src=”#” data-src="myObjectSvg.svg" />
