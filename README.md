@@ -65,7 +65,7 @@ Using this way allows you to get a large number of solutions from a single svg o
 	
 ## Quick start
 
-1. Download the plugin here
+1. Download the plugin [here](https://github.com/icoonies/icoonies/tree/master/source)
 2. Unzip it
 3. Copy files into your web server 
 4. Include icoonies script and stylesheet in your document 
@@ -212,6 +212,7 @@ mode:
 
 - Alessandro Romanini ([@alleromanini](https://twitter.com/alleromanini))
 - Mattia Cattabiani
+- Alessandro Alpi ([@suxstellino](https://twitter.com/suxstellino))
 
 ## License
 Icoonies is released under the [MIT license](https://github.com/icoonies/icoonies/blob/master/LICENSE).
