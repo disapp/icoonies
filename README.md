@@ -6,7 +6,7 @@ Icoonies is a modern plugin for easily managing and customizing vector images in
 
 - [Benefits](#benefits)
 - [Quick start](#quick-start)
-- [Ho to configure the _select modes_](#how-to-configure-the-select-mode)
+- [Ho to configure the select modes](#how-to-configure-the-select-mode)
 - [How to show svg areas](#how-to-show-svg-areas)
 - [Css and icoonies](#css-and-icoonies)
 - [Options](#options)
@@ -37,7 +37,7 @@ icoonies can manage the svg object with three different behaviors. Note that the
 2. customizing the svg object with an _image tag_ (select mode: _image_)
 
     //html
-    <img alt=”my svg” class="icoonies myClass" src=”#” data-src="myObjectSvg.svg" />
+	<img alt="my svg" class="icoonies myClass" src="#" data-src="myObjectSvg.svg" />
 
     //css
 	.myClass #icoo-area-1 	{ /*icoonies*/  fill:green; stroke:blue; stroke-width:5;}
@@ -45,7 +45,7 @@ icoonies can manage the svg object with three different behaviors. Note that the
 3. customize the svg object with _svg tag_ (select mode: _svg_)
 
     //html
-    <img alt=”my svg” data-mode="svg" class="icoonies myClass" src=”#” data-src="myObjectSvg.svg" />
+	<img alt="my svg" data-mode="svg" class="icoonies myClass" src=”#” data-src="myObjectSvg.svg" />
 
     //css
 	.myClass #icoo-area-1 	{ /*icoonies*/  fill:green; stroke:blue; stroke-width:5;}
