@@ -6,7 +6,7 @@ Icoonies is a modern plugin for easily managing and customizing vector images in
 
 - [Benefits](#benefits)
 - [Quick start](#quick-start)
-- [How to configure the select modes](#how-to-configure-the-select-mode)
+- [How to configure the select modes](#how-to-configure-the-select-modes)
 - [How to show svg areas](#how-to-show-svg-areas)
 - [Css and icoonies](#css-and-icoonies)
 - [Options](#options)
