@@ -25,7 +25,7 @@ This is a sample svg object:
 
 icoonies can manage the svg object with three different behaviors. Note that the svg object will not be edited:
 
-1. customizing the svg object with a _background image_ (select mode: _background_)
+Customizing the svg object with a _background image_ (select mode: _background_)
 
     //html
 	<span class=”myClass”>lorem ipsum.. </span>
@@ -34,7 +34,7 @@ icoonies can manage the svg object with three different behaviors. Note that the
 	.myClass 				{ /*icoonies*/  background:url(myObjectSvg.svg) ..}
 	.myClass #icoo-area-1 	{ /*icoonies*/  fill:green; stroke:blue; stroke-width:5;}
 	
-2. customizing the svg object with an _image tag_ (select mode: _image_)
+Customizing the svg object with an _image tag_ (select mode: _image_)
 
    	//html
 	<img alt=”my svg” class="icoonies myClass" src=”#” data-src="myObjectSvg.svg" />
@@ -42,7 +42,7 @@ icoonies can manage the svg object with three different behaviors. Note that the
     //css
 	.myClass #icoo-area-1 	{ /*icoonies*/  fill:green; stroke:blue; stroke-width:5;}
 	
-3. customize the svg object with _svg tag_ (select mode: _svg_)
+Customizing the svg object with _svg tag_ (select mode: _svg_)
 
    	//html
 	<img alt=”my svg” data-mode="svg" class="icoonies myClass" src=”#” data-src="myObjectSvg.svg" />
