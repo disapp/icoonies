@@ -6,7 +6,7 @@ Icoonies is a modern plugin for easily managing and customizing vector images in
 
 - [Benefits](#benefits)
 - [Quick start](#quick-start)
-- [Ho to configure the select modes](#how-to-configure-the-select-mode)
+- [How to configure the select modes](#how-to-configure-the-select-mode)
 - [How to show svg areas](#how-to-show-svg-areas)
 - [Css and icoonies](#css-and-icoonies)
 - [Options](#options)
@@ -95,7 +95,7 @@ Attach icoonies when the document is loaded
 		});
 	</script>
 	
-## Ho to configure the select modes
+## How to configure the select modes
 
 _Select modes_ can be described as transformation behavior directly managed by the plugin. Icoonies renders the html based on this modes.
 The following examples show you how to manage svg objects with icoonies:
