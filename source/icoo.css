@@ -19,9 +19,9 @@
 .icoo-overflow-modal p                					{ 	font-size:120%;  
 }
 .icoo-close-modal,
-.icoo-close-modal:hover                  				{   /*icoonies;*/ position:absolute; top:-10px; right:-5px; z-index:900000; width:35px; min-height:35px; font-size:0; background:url(../svg/icoo-close.svg) no-repeat center top; 
+.icoo-close-modal:hover                  				{   /*icoonies*/ position:absolute; top:-10px; right:-5px; z-index:900000; width:35px; min-height:35px; font-size:0; background:url(icoo-close.svg) no-repeat center top; 
 }
-.icoo-close-modal #icoo-area-2                  		{   /*icoonies;*/ fill:#9b007e;
+.icoo-close-modal #icoo-area-2                  		{   /*icoonies*/ fill:#9b007e;
 }
 .icoo-close-modal:hover #icoo-area-2					{	/*icoonies*/ opacity:.5;
 }
