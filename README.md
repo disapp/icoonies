@@ -53,7 +53,7 @@ Customizing the svg object with _svg tag_ (svg mode)
     //css
 	.myClass #icoo-area-1 	{ /*icoonies*/  fill:green; stroke:blue; stroke-width:5;}
 
-Using this way allows you to get a large number of solutions from a single **icon svg**, just by writing little markup:
+Using this way allows you to get a large number of solutions from a single **icon svg (icoon)**, just by writing little markup:
 
     //html
 	<span class=”myIconGreen”>lorem ipsum.. </span>
@@ -117,4 +117,4 @@ Attach icoonies when the document is loaded
 - Alessandro Alpi ([@suxstellino](https://twitter.com/suxstellino))
 
 ## License
-Icoonies is released under the [MIT license](https://github.com/icoonies/icoonies/blob/master/LICENSE).
+icoonies is released under the [MIT license](https://github.com/icoonies/icoonies/blob/master/LICENSE).
