@@ -1,17 +1,16 @@
 # icoonies
 
-Icoonies is a modern plugin for easily managing and customizing vector images in web projects. It allows to create multiple different versions of images in a very fast way with a user-friendly interface which discovers sections over image files.
+icoonies is a modern plugin for easily managing and customizing vector icon in web projects. It allows to create multiple different versions of icon in a very fast way with a user-friendly interface which discovers sections over icon files.
 
+To get started, check out [http://www.icoonies.website](http://www.icoonies.website)
+ 
 ## Table of content
 
 - [Benefits](#benefits)
 - [Quick start](#quick-start)
-- [How to configure the select modes](#how-to-configure-the-select-modes)
-- [How to show svg areas](#how-to-show-svg-areas)
-- [Css and icoonies](#css-and-icoonies)
-- [Options](#options)
-- [API methods](#api-methods)
+- [Next step](#next-step)
 - [Author](#author)
+- [Contributor](#contributor)
 - [License](#license)
 
 ## Benefits
@@ -25,7 +24,7 @@ This is a sample svg object:
 
 icoonies can manage the svg object with three different behaviors. Note that the svg object will not be edited:
 
-Customizing the svg object with a _background image_ (select mode: _background_)
+Customizing the svg object with a _background image_ (background mode)
 
     //html
 	<span class=”myClass”>lorem ipsum.. </span>
@@ -34,7 +33,7 @@ Customizing the svg object with a _background image_ (select mode: _background_)
 	.myClass 				{ /*icoonies*/  background:url(myObjectSvg.svg) ..}
 	.myClass #icoo-area-1 	{ /*icoonies*/  fill:green; stroke:blue; stroke-width:5;}
 	
-Customizing the svg object with an _image tag_ (select mode: _image_)
+Customizing the svg object with an _image tag_ (image mode)
 
    	//html
 	<img alt=”my svg” class="icoonies myClass" src=”#” data-src="myObjectSvg.svg" />
@@ -42,26 +41,30 @@ Customizing the svg object with an _image tag_ (select mode: _image_)
     //css
 	.myClass #icoo-area-1 	{ /*icoonies*/  fill:green; stroke:blue; stroke-width:5;}
 	
-Customizing the svg object with _svg tag_ (select mode: _svg_)
+Customizing the svg object with _svg tag_ (svg mode)
 
-   	//html
+   	//html image tag
+
 	<img alt=”my svg” data-mode="svg" class="icoonies myClass" src=”#” data-src="myObjectSvg.svg" />
+	
+	//html generic tag example span
+	<span data-mode="svg" class="icoonies myClass" data-src="myObjectSvg.svg"> </span>
 
     //css
 	.myClass #icoo-area-1 	{ /*icoonies*/  fill:green; stroke:blue; stroke-width:5;}
 
-Using this way allows you to get a large number of solutions from a single svg object, just by writing little markup:
+Using this way allows you to get a large number of solutions from a single **icon svg**, just by writing little markup:
 
     //html
-	<span class=”myClassGreen”>lorem ipsum.. </span>
-	<span class=”myClassBlue”>lorem ipsum.. </span>
-	<span class=”myClassYellow”>lorem ipsum.. </span>
+	<span class=”myIconGreen”>lorem ipsum.. </span>
+	<span class=”myIconBlue”>lorem ipsum.. </span>
+	<span class=”myIconYellow”>lorem ipsum.. </span>
 	
     //css
-	.myClassGreen, .myClassBlue, .myClassYellow 	{ /*icoonies*/  background:url(myObjectSvg.svg) ..}
-	.myClassGreen  #icoo-area-1 			    { /*icoonies*/  fill:green; opacity:.6; ...  }
-	.myClassBlue   #icoo-area-1 				{ /*icoonies*/  fill:blue; stroke:#000; ...}
-	.myClassYellow #icoo-area-1 				{ /*icoonies*/  fill:Yellow; stroke:none; ... }
+	.myIconGreen, .myIconBlue, .myIconYellow 	{ /*icoonies*/  background:url(myIcon.svg) ..}
+	.myIconGreen  #icoo-area-1 			    	{ /*icoonies*/  fill:green; opacity:.6; ...  }
+	.myIconBlue   #icoo-area-1 					{ /*icoonies*/  fill:blue; stroke:#000; ...}
+	.myIconYellow #icoo-area-1 					{ /*icoonies*/  fill:Yellow; stroke:none; ... }
 	
 ## Quick start
 
@@ -95,123 +98,22 @@ Attach icoonies when the document is loaded
 		});
 	</script>
 	
-## How to configure the select modes
+## Next step
 
-_Select modes_ can be described as transformation behavior directly managed by the plugin. Icoonies renders the html based on this modes.
-The following examples show you how to manage svg objects with icoonies:
-
-Background select mode:
-	
-    //html
-	<p class=”myClass”>Lorem ipusm </p> 
-	
-    //css
-	.myClass  {   /*icoonies*/ background:url(myObjectSvg.svg) .. ;}  
-
-Image select mode:
-
-    //html
-	<img alt=”my svg” class=”icoonies” src=”#” data-src=”myObjectSvg.svg” />
-	
-Svg select mode:
-
-    //html
-	<img alt=”my svg” data-mode="svg" class=”icoonies” src=”#” data-src=”myObjectSvg.svg” />
-	
-## How to show svg areas
-Svg files are organized in areas (or sections). Each area can be configured and customized.
-Icoonies discovers areas of a svg file and adds an id with "icoo-area-" prefix followed by "(n)", with _n_ which is the number of each area. 
-The following examples display how to get areas:
-
-Background select mode:
-	
-    //html
-	<p class=”myClass”>Lorem ipusm </p> 
-	
-    //css
-	.myClass  {   /*icoonies icoo-showarea:true;*/ background:url(myObjectSvg.svg) .. ;} 
-	
-Image select mode:
-
-    //html
-	<img alt=”my svg” class=”icoonies icoo-showarea” src=”#” data-src=”myObjectSvg.svg” />
-	
-Svg select mode:
-
-    //html
-	<img alt=”my svg” data-mode="svg" class=”icoonies icoo-showarea” src=”#” data-src=”myObjectSvg.svg” />
-	
-## Css and icoonies
-
-Regardless what is the select mode you've chosen, the customization of a svg object must be done using CSS.
-The css rules used to customize the svg object have to start with the comment /* icoonies */.
-
-Sample setting
-	
-	.myClass  {   /*icoonies*/ …} 
-	
-The comment /* icoonies */ can contain also properties that are applied to the svg object
-
-	.myClass  {   /*icoonies icoo-preserveAspectRatio:xMinYMin; icoo-class:myClassSvg*/ …}
-
-You can configure the areas in two ways:
-
-class and area_id:
-
-	.myClass  #icoo-area-(n)    {  /*icoonies*/ fill:red; opacity:0.5; }
-
-class with region:
-
-	.myClass    { /*icoonies icoo-region:myRegion; icoo-class:myClassSvg */ ...}
-	
-	/*region myRegion */
-		.myClassSvg #icoo-area-(n)   {  fill:red; opacity:0.5;
-		}
-	/*endregion*/
-
-## Options
-	
-### Comment /* icoonies */ options
-
-- icoo-showarea 
-	- Applies in the case of background mode. Shows the name and the shape of the svg's areas
-	- Boolean; value:true;
-- icoo-(attribute)
-	- Name of the attribute that is applied to the object svg
-	- String; 
-- icoo-region
-	- Name of the region where css styles are applied to the object svg
-	- String;
-	
-### Html tag options
-
-- data-src
-	- Applies in the case of image and svg mode. Object path svg
-    - String;
-- data-mode
-	- Applies in the case of image and svg mode. Mode it is rendered the svg
-	- String; value: image,svg; default-value:image;
-
-### Css options
-
-Region
-
-    .selector		{	/*icoonies icoo-region:nameregion;*/
-	}
-	/* region nameregion*/
-		...style..
-	/*endregion*/
-
-#Api Methods
-
-mode:
-
-	icoo.init(mode:[options]);
+1. [Search icoons](http://www.icoonies.website)
+2. [Show the documentations](http://www.icoonies.website/Icoonies/Start)
+3. See an example:
+	* [background mode](http://www.icoonies.website/Icoonies/BackgroundMode)
+	* [image mode](http://www.icoonies.website/Icoonies/ImageMode)
+	* [svg mode](http://www.icoonies.website/Icoonies/SvgMode)
 	
 ## Author
 
 - Alessandro Romanini ([@alleromanini](https://twitter.com/alleromanini))
 - Mattia Cattabiani
+
+##Contributor
+
 - Alessandro Alpi ([@suxstellino](https://twitter.com/suxstellino))
 
 ## License
