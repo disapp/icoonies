@@ -1,7 +1,7 @@
 ﻿/* Icoonies
  * version: 1.0 (04 Dec 2014)
- * Copyright (c) 2014 Alessandro Romanini ### Mattia Cattabiani 
- * icooniesteam@gmail.com
+ * Copyright (c) 2014 Disapp 
+ * disappteam@gmail.com
  
  * Permission is hereby granted, free of charge, to any person
    obtaining a copy of this software and associated documentation
