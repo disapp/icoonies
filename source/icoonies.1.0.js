@@ -164,7 +164,7 @@ if (typeof String.prototype.startsWith != 'function') {
         }
 
         , parseCss: function (data, url) {
-            var css_rules = data.replace(/\\t{1,}|\\r|\\n/gmi, '').replace(/\r/gmi, ' ').replace(/\n/gmi, ' ').replace(/@media[^{]*\{(?:(?!\}\s*\}).)*/gmi, '').match(App.cssregex);
+            var css_rules = data.replace(/\\t{1,}|\\r|\\n/gmi, '').replace(/\r/gmi, ' ').replace(/\n/gmi, ' ').replace(/@media screen/gmi, '@screen').replace(/@media[^{]*\{(?:(?!\}\s*\}).)*/gmi, '').replace(/screen/gmi, '@media screen').match(App.cssregex);
             if (css_rules) {
                 for (var i = 0; i < css_rules.length; i++) {
 
@@ -320,8 +320,9 @@ if (typeof String.prototype.startsWith != 'function') {
                     else if (attributes.embedstyle) {
                         var style_node = null;
                         if (svg && svg.find("style").length == 0) {
-                            svg.append('<style></style>');
-                            style_node = svg.find("style");
+                            style_node = $('<style></style>');
+                            svg.append(style_node);
+                           // style_node = svg.find("style");
                         }
                         else if (svg && svg.find("style").length > 0) {
                             style_node = svg.find("style");
